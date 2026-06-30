@@ -160,7 +160,7 @@ a {
   background:
     linear-gradient(90deg, rgba(3, 8, 15, 0.88) 0%, rgba(3, 8, 15, 0.54) 44%, rgba(3, 8, 15, 0.16) 100%),
     linear-gradient(180deg, rgba(3, 8, 15, 0.12), var(--bg) 100%),
-    url("assets/hero-grid.png") center / cover no-repeat;
+    url("../assets/images/hero-grid.png") center / cover no-repeat;
 }
 
 .hero::after {

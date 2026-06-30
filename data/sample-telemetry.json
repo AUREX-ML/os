@@ -1,0 +1,13 @@
+[
+  {
+    "deviceId": "inverter-001",
+    "timestamp": "2026-06-30T00:00:00Z",
+    "metrics": {
+      "activePower_W": 3500,
+      "reactivePower_VAr": 120,
+      "voltage_V": 230.1,
+      "current_A": 15.2,
+      "stateOfCharge_pct": 72
+    }
+  }
+]

@@ -1,13 +1,284 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>enerOS</title>
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <h1>enerOS</h1>
-  <script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="enerOS is an Electrical Energy Operating System for monitoring, coordinating, and optimizing distributed energy resources."
+    >
+    <title>enerOS | Electrical Energy Operating System</title>
+    <link rel="preload" href="assets/images/hero-grid.png" as="image">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="enerOS home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>enerOS</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav nav-menu" aria-label="Primary navigation">
+        <a href="#platform">Platform</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#use-cases">Use cases</a>
+        <a href="#developers">Developers</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Electrical Energy Operating System</p>
+          <h1 id="hero-title">The software layer for intelligent, distributed energy systems.</h1>
+          <p class="hero-copy">
+            enerOS helps utilities, facilities, and energy operators monitor, coordinate, and
+            optimize solar PV, battery storage, generators, grid supply, and electrical loads in
+            real time.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="https://github.com/AUREX-ML/os" aria-label="View enerOS GitHub repository placeholder">View GitHub</a>
+            <a class="button secondary" href="#platform">Explore Platform</a>
+          </div>
+        </div>
+
+        <aside class="hero-console reveal" aria-label="Live system status preview">
+          <div class="console-topline">
+            <span>DER coordination</span>
+            <strong>LIVE</strong>
+          </div>
+          <div class="metric-grid">
+            <div>
+              <span>Solar PV</span>
+              <strong><span data-counter="4.8">0</span> MW</strong>
+            </div>
+            <div>
+              <span>Battery SOC</span>
+              <strong><span data-counter="76">0</span>%</strong>
+            </div>
+            <div>
+              <span>Peak offset</span>
+              <strong><span data-counter="18">0</span>%</strong>
+            </div>
+            <div>
+              <span>Assets online</span>
+              <strong><span data-counter="142">0</span></strong>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section problem reveal" aria-labelledby="problem-title">
+        <div class="section-heading">
+          <p class="eyebrow">The challenge</p>
+          <h2 id="problem-title">The grid is changing faster than traditional systems can manage.</h2>
+        </div>
+        <div class="problem-layout">
+          <p>
+            Commercial and industrial customers are adopting solar, storage, and backup power
+            systems. Energy networks are becoming more distributed, dynamic, and difficult to
+            coordinate.
+          </p>
+          <div class="problem-list" aria-label="Energy system problems">
+            <span class="reveal">Limited DER visibility</span>
+            <span class="reveal">Renewable intermittency</span>
+            <span class="reveal">Peak demand stress</span>
+            <span class="reveal">Poor grid coordination</span>
+            <span class="reveal">Inefficient facility usage</span>
+            <span class="reveal">Decision support gaps</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="platform" class="section solution reveal" aria-labelledby="solution-title">
+        <div class="split">
+          <div class="section-heading">
+            <p class="eyebrow">The platform</p>
+            <h2 id="solution-title">From disconnected assets to one intelligent energy system.</h2>
+            <p>
+              enerOS connects distributed energy assets, collects operational data, analyzes system
+              behavior, and supports smarter control decisions across the energy ecosystem.
+            </p>
+          </div>
+          <div class="system-video reveal" aria-label="Animated energy coordination video">
+            <div class="video-toolbar">
+              <span></span>
+              <span>Network flow simulation</span>
+              <button type="button" data-motion-toggle aria-pressed="true" aria-label="Pause energy map animation">Pause</button>
+            </div>
+            <div class="energy-map" data-motion-area>
+              <span class="node solar"></span>
+              <span class="node battery"></span>
+              <span class="node grid"></span>
+              <span class="node load"></span>
+              <span class="flow flow-a"></span>
+              <span class="flow flow-b"></span>
+              <span class="flow flow-c"></span>
+              <span class="pulse pulse-a"></span>
+              <span class="pulse pulse-b"></span>
+              <span class="pulse pulse-c"></span>
+              <div class="map-label label-a">PV</div>
+              <div class="map-label label-b">Storage</div>
+              <div class="map-label label-c">Grid</div>
+              <div class="map-label label-d">Loads</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="capability-grid" aria-label="Platform capabilities">
+          <article class="reveal">
+            <span class="capability-icon">M</span>
+            <h3>Monitor</h3>
+            <p>Track grid supply, solar PV, batteries, generators, and loads in real time.</p>
+          </article>
+          <article class="reveal">
+            <span class="capability-icon">A</span>
+            <h3>Analyze</h3>
+            <p>Understand energy flows, demand patterns, efficiency, and system performance.</p>
+          </article>
+          <article class="reveal">
+            <span class="capability-icon">C</span>
+            <h3>Coordinate</h3>
+            <p>Enable intelligent interaction between distributed resources and the grid.</p>
+          </article>
+          <article class="reveal">
+            <span class="capability-icon">O</span>
+            <h3>Optimize</h3>
+            <p>Improve reliability, reduce waste, support cost savings, and enhance resilience.</p>
+          </article>
+          <article class="reveal">
+            <span class="capability-icon">I</span>
+            <h3>Integrate</h3>
+            <p>Connect meters, IoT devices, controllers, databases, dashboards, and APIs.</p>
+          </article>
+          <article class="reveal">
+            <span class="capability-icon">S</span>
+            <h3>Scale</h3>
+            <p>Designed for facilities, campuses, utilities, and EMS research environments.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="architecture" class="section architecture reveal" aria-labelledby="architecture-title">
+        <div class="section-heading centered">
+          <p class="eyebrow">Architecture</p>
+          <h2 id="architecture-title">A modular stack for modern energy intelligence.</h2>
+          <p>
+            The platform evolves from monitoring into forecasting, automation, dispatch, and
+            grid-aware optimization.
+          </p>
+        </div>
+        <div class="layer-stack" aria-label="enerOS platform layers">
+          <article class="reveal">
+            <span>01</span>
+            <h3>Devices Layer</h3>
+            <p>Meters, inverters, batteries, generators, sensors, and smart loads.</p>
+          </article>
+          <article class="reveal">
+            <span>02</span>
+            <h3>Data Layer</h3>
+            <p>Real-time telemetry, historical data, events, and device status.</p>
+          </article>
+          <article class="reveal">
+            <span>03</span>
+            <h3>Intelligence Layer</h3>
+            <p>Analytics, forecasting, optimization, and anomaly detection.</p>
+          </article>
+          <article class="reveal">
+            <span>04</span>
+            <h3>Control Layer</h3>
+            <p>Recommendations, automation, dispatch, and coordination logic.</p>
+          </article>
+          <article class="reveal">
+            <span>05</span>
+            <h3>Application Layer</h3>
+            <p>Dashboards, reports, alerts, operator tools, and APIs.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="use-cases" class="section use-cases reveal" aria-labelledby="use-cases-title">
+        <div class="section-heading">
+          <p class="eyebrow">Use cases</p>
+          <h2 id="use-cases-title">Built for operators managing distributed power.</h2>
+        </div>
+        <div class="use-case-grid">
+          <span class="reveal">Utility DER visibility</span>
+          <span class="reveal">Commercial facility management</span>
+          <span class="reveal">Solar and battery supervision</span>
+          <span class="reveal">Peak demand optimization</span>
+          <span class="reveal">Backup power coordination</span>
+          <span class="reveal">Energy data analytics</span>
+          <span class="reveal">Microgrid supervision</span>
+          <span class="reveal">EMS research and prototyping</span>
+        </div>
+      </section>
+
+      <section class="section media-section reveal" aria-labelledby="media-title">
+        <div class="section-heading centered">
+          <p class="eyebrow">Visual intelligence</p>
+          <h2 id="media-title">Illustrative product videos for the operating layer.</h2>
+        </div>
+        <div class="media-grid">
+          <article class="video-card reveal">
+            <div class="dashboard-loop" aria-hidden="true" data-motion-area>
+              <span class="bar b1"></span>
+              <span class="bar b2"></span>
+              <span class="bar b3"></span>
+              <span class="bar b4"></span>
+              <span class="trend"></span>
+            </div>
+            <h3>Energy intelligence loop</h3>
+            <p>Animated telemetry, demand behavior, and performance monitoring.</p>
+          </article>
+          <article class="video-card reveal">
+            <div class="dispatch-loop" aria-hidden="true" data-motion-area>
+              <span class="dispatch-ring"></span>
+              <span class="dispatch-core"></span>
+              <span class="dispatch-line l1"></span>
+              <span class="dispatch-line l2"></span>
+              <span class="dispatch-line l3"></span>
+            </div>
+            <h3>Distributed dispatch loop</h3>
+            <p>Animated asset coordination across PV, storage, load, and grid nodes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="developers" class="section developers reveal" aria-labelledby="developers-title">
+        <div class="developer-panel">
+          <div>
+            <p class="eyebrow">Open foundation</p>
+            <h2 id="developers-title">Built for engineers, researchers, and energy innovators.</h2>
+            <p>
+              enerOS is an extensible foundation for intelligent energy applications, EMS
+              prototypes, IoT integrations, and facility energy management systems.
+            </p>
+          </div>
+          <a class="button primary" href="https://github.com/AUREX-ML/os">View Repository</a>
+        </div>
+      </section>
+
+      <section class="final-cta reveal" aria-labelledby="final-title">
+        <p class="eyebrow">Vision</p>
+        <h2 id="final-title">Building the intelligence layer for Africa's energy transition.</h2>
+        <a class="button primary" href="#platform">Start Exploring</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>enerOS</span>
+      <span>© <span id="year"></span> Electrical Energy Operating System</span>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

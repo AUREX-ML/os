@@ -1,13 +1,242 @@
 [
   {
-    "deviceId": "inverter-001",
     "timestamp": "2026-06-30T00:00:00Z",
-    "metrics": {
-      "activePower_W": 3500,
-      "reactivePower_VAr": 120,
-      "voltage_V": 230.1,
-      "current_A": 15.2,
-      "stateOfCharge_pct": 72
-    }
+    "site_id": "demo-site-001",
+    "solar_kw": 0.0,
+    "load_kw": 20.01,
+    "battery_soc": 50.0,
+    "generator_kw": 0.0,
+    "grid_kw": -10.01,
+    "site_status": "normal"
+  },
+  {
+    "timestamp": "2026-06-30T01:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 0.0,
+    "load_kw": 20.03,
+    "battery_soc": 40.0,
+    "generator_kw": 0.0,
+    "grid_kw": -10.03,
+    "site_status": "normal"
+  },
+  {
+    "timestamp": "2026-06-30T02:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 0.0,
+    "load_kw": 20.17,
+    "battery_soc": 30.0,
+    "generator_kw": 0.0,
+    "grid_kw": -10.17,
+    "site_status": "normal"
+  },
+  {
+    "timestamp": "2026-06-30T03:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 0.0,
+    "load_kw": 20.66,
+    "battery_soc": 20.0,
+    "generator_kw": 0.0,
+    "grid_kw": -10.66,
+    "site_status": "normal"
+  },
+  {
+    "timestamp": "2026-06-30T04:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 0.0,
+    "load_kw": 22.03,
+    "battery_soc": 10.0,
+    "generator_kw": 0.0,
+    "grid_kw": -12.03,
+    "site_status": "low_battery"
+  },
+  {
+    "timestamp": "2026-06-30T05:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 0.0,
+    "load_kw": 24.87,
+    "battery_soc": 0.1,
+    "generator_kw": 15.0,
+    "grid_kw": 0.0,
+    "site_status": "low_battery"
+  },
+  {
+    "timestamp": "2026-06-30T06:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 0.0,
+    "load_kw": 29.1,
+    "battery_soc": 0.0,
+    "generator_kw": 15.0,
+    "grid_kw": -4.1,
+    "site_status": "low_battery"
+  },
+  {
+    "timestamp": "2026-06-30T07:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 11.13,
+    "load_kw": 33.24,
+    "battery_soc": 0.0,
+    "generator_kw": 15.0,
+    "grid_kw": 0.0,
+    "site_status": "low_battery"
+  },
+  {
+    "timestamp": "2026-06-30T08:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 21.69,
+    "load_kw": 35.0,
+    "battery_soc": 0.0,
+    "generator_kw": 13.31,
+    "grid_kw": 0.0,
+    "site_status": "low_battery"
+  },
+  {
+    "timestamp": "2026-06-30T09:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 31.17,
+    "load_kw": 33.24,
+    "battery_soc": 0.0,
+    "generator_kw": 2.07,
+    "grid_kw": 0.0,
+    "site_status": "solar_charging"
+  },
+  {
+    "timestamp": "2026-06-30T10:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 39.09,
+    "load_kw": 29.1,
+    "battery_soc": 10.0,
+    "generator_kw": 0.0,
+    "grid_kw": 0.0,
+    "site_status": "solar_charging"
+  },
+  {
+    "timestamp": "2026-06-30T11:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 45.05,
+    "load_kw": 24.88,
+    "battery_soc": 20.0,
+    "generator_kw": 0.0,
+    "grid_kw": 10.17,
+    "site_status": "solar_charging"
+  },
+  {
+    "timestamp": "2026-06-30T12:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 48.75,
+    "load_kw": 22.07,
+    "battery_soc": 30.0,
+    "generator_kw": 0.0,
+    "grid_kw": 16.68,
+    "site_status": "solar_charging"
+  },
+  {
+    "timestamp": "2026-06-30T13:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 50.0,
+    "load_kw": 20.88,
+    "battery_soc": 40.0,
+    "generator_kw": 0.0,
+    "grid_kw": 19.12,
+    "site_status": "solar_charging"
+  },
+  {
+    "timestamp": "2026-06-30T14:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 48.75,
+    "load_kw": 21.05,
+    "battery_soc": 50.0,
+    "generator_kw": 0.0,
+    "grid_kw": 17.7,
+    "site_status": "solar_charging"
+  },
+  {
+    "timestamp": "2026-06-30T15:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 45.05,
+    "load_kw": 22.74,
+    "battery_soc": 60.0,
+    "generator_kw": 0.0,
+    "grid_kw": 12.31,
+    "site_status": "solar_charging"
+  },
+  {
+    "timestamp": "2026-06-30T16:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 39.09,
+    "load_kw": 26.5,
+    "battery_soc": 70.0,
+    "generator_kw": 0.0,
+    "grid_kw": 2.59,
+    "site_status": "solar_charging"
+  },
+  {
+    "timestamp": "2026-06-30T17:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 31.17,
+    "load_kw": 32.13,
+    "battery_soc": 69.0,
+    "generator_kw": 0.0,
+    "grid_kw": 0.0,
+    "site_status": "solar_charging"
+  },
+  {
+    "timestamp": "2026-06-30T18:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 21.69,
+    "load_kw": 37.65,
+    "battery_soc": 59.0,
+    "generator_kw": 0.0,
+    "grid_kw": -5.96,
+    "site_status": "normal"
+  },
+  {
+    "timestamp": "2026-06-30T19:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 11.13,
+    "load_kw": 40.0,
+    "battery_soc": 49.0,
+    "generator_kw": 0.0,
+    "grid_kw": -18.87,
+    "site_status": "normal"
+  },
+  {
+    "timestamp": "2026-06-30T20:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 0.0,
+    "load_kw": 37.65,
+    "battery_soc": 39.0,
+    "generator_kw": 0.0,
+    "grid_kw": -27.65,
+    "site_status": "normal"
+  },
+  {
+    "timestamp": "2026-06-30T21:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 0.0,
+    "load_kw": 32.13,
+    "battery_soc": 29.0,
+    "generator_kw": 0.0,
+    "grid_kw": -22.13,
+    "site_status": "normal"
+  },
+  {
+    "timestamp": "2026-06-30T22:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 0.0,
+    "load_kw": 26.49,
+    "battery_soc": 19.0,
+    "generator_kw": 0.0,
+    "grid_kw": -16.49,
+    "site_status": "low_battery"
+  },
+  {
+    "timestamp": "2026-06-30T23:00:00Z",
+    "site_id": "demo-site-001",
+    "solar_kw": 0.0,
+    "load_kw": 22.71,
+    "battery_soc": 11.3,
+    "generator_kw": 15.0,
+    "grid_kw": 0.0,
+    "site_status": "low_battery"
   }
 ]
